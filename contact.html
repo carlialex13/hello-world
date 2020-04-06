@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+
+<title>Test d'interface</title>
+</head>
+
+<body>
+	<header>
+		<nav class="header-nav bg-white-500 h-12 border-solid border-2 border-green-600">
+			<a href="acceuil.html" class="header-link"> Acceuil </a>
+			<a href="admin-gsp.html" class="header-link"> Admin </a>
+			<a href="contact.html" class="header-link"> Nous contacter </a>
+			<a href="planning.html" class="header-link"> Plannification </a>
+		</nav>
+	</header>
+	
+	
+	<div class="form-contact w-full max-w-lg">
+		<form class="bg-white rounded px-8 pt-6 pb-8 mb-4">
+			<label for="select"> Vous nous contactez pour : </label>
+				<select id="select">
+					<option value="default" selected >Faites votre choix</option>
+					<option value="1" onclick="list1()">Demande N°1</option>
+					<option value="2" onclick="list1()">Demande N°2</option>
+					<option value="3" onclick="list1()">Demande N°3</option>
+				</select>
+			<div class="probleme">
+				<label for="problemes">Précisez votre demande : </label>
+					<select id="problemes" type="">
+						<option value="default" selected>Faites votre choix</option>
+						<option value="1" onclick="list2()">Probleme 1 </option>
+						<option value="2" onclick="list2()">Probleme 2 </option>
+						<option value="3" onclick="list2()">Probleme 3 </option>
+					</select>
+			</div>
+			
+			<div class="precision">
+				<label for="precisions">Précisez votre demande : </label>
+					<select id="precisions" type="">
+						<option value="default" selected>Faites votre choix</option>
+						<option value="1" onclick="list3()">Precision 1 </option>
+						<option value="2" onclick="list3()">Precision 2 </option>
+						<option value="3" onclick="list3()">Precision 3 </option>
+					</select>
+			</div>
+			
+			<div class="commentaire flex flex-col">
+				<label for="commentaires">Précisez votre demande : </label>
+				<textarea id="commentaires" rows="4" cols="50" class="border-solid border-4 border-gray-600"> </textarea>
+				
+				<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+					Envoyer
+				</button>
+			</div>			
+			
+		</form>
+		
+	</div>
+<script src="script.js"> </script>
+</body>
+
+</html> 

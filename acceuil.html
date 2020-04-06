@@ -1,0 +1,131 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="style.css">
+<title>Test d'interface</title>
+</head>
+
+<body>
+	<header>
+		<nav class="header-nav bg-white-500 h-12 border-solid border-2 border-green-600">
+			<a href="acceuil.html" class="header-link"> Acceuil </a>
+			<a href="admin-gsp.html" class="header-link"> Admin </a>
+			<a href="contact.html" class="header-link"> Nous contacter </a>
+			<a href="planning.html" class="header-link"> Plannification </a>
+		</nav>
+	</header>
+	
+	
+	<div class="flex flex-wrap justify-between items-center">
+		<div class="body-card mx-8 px-8 border-solid border-2 border-gray-600 shadow-lg rounded-md h-56">
+			<div class="body-card-info ">
+				<h2 class="text-lg">Assitance Technique</h2>
+				<h2>Nombre de conseiller en production : 50 </h2>
+				<h2>Nombre de conseiller en sortie de production : 10 <h2>
+				<h3>Taux de sortie de production : 20% </h3>
+				<button class="mx-2 mt-2 px-2 bg-green-600 border-solid border-2 border-green-600 rounded-md"> Sortie de production individuelle</button></br>
+				<button class="mx-2 mt-2 px-2 bg-blue-600 border-solid border-2 border-blue-600 rounded-md"> Sortie de production collective </button>
+			</div>
+		</div>
+			
+		<div class="body-card mx-8 px-8 border-solid border-2 border-gray-600 shadow-lg rounded-md h-56">
+			<div class="body-card-info">
+				<h2 class="text-lg">ELITE</h2>
+				<h2>Nombre de conseiller en production : 50 </h2>
+				<h2>Nombre de conseiller en sortie de production : 10 <h2>
+				<h3>Taux de sortie de production : 20% </h3>
+				<button class="myBtn button mx-2 mt-2 px-2 bg-green-600 border-solid border-2 border-green-600 rounded-md" id="myBtn"> Sortie de production individuelle</button></br>
+				<button class="button mx-2 mt-2 px-2 bg-blue-600 border-solid border-2 border-blue-600 rounded-md" id="myBtn2"> Sortie de production collective </button>
+			</div>
+		</div>
+		
+		<div class="body-card mx-8 px-8 border-solid border-2 border-gray-600 shadow-lg rounded-md h-56">
+			<div class="body-card-info ">
+				<h2 class="text-lg">Assitance Technique</h2>
+				<h2>Nombre de conseiller en production : 50 </h2>
+				<h2>Nombre de conseiller en sortie de production : 10 <h2>
+				<h3>Taux de sortie de production : 20% </h3>
+				<button class="mx-2 mt-2 px-2 bg-green-600 border-solid border-2 border-green-600 rounded-md"> Sortie de production individuelle</button></br>
+				<button class="mx-2 mt-2 px-2 bg-blue-600 border-solid border-2 border-blue-600 rounded-md"> Sortie de production collective </button>
+			</div>
+		</div>
+		
+		<div class="body-card mx-8 px-8 border-solid border-2 border-gray-600 shadow-lg rounded-md h-56">
+			<div class="body-card-info ">
+				<h2 class="text-lg">Assitance Technique</h2>
+				<h2>Nombre de conseiller en production : 50 </h2>
+				<h2>Nombre de conseiller en sortie de production : 10 <h2>
+				<h3>Taux de sortie de production : 20% </h3>
+				<button class="mx-2 mt-2 px-2 bg-green-600 border-solid border-2 border-green-600 rounded-md"> Sortie de production individuelle</button></br>
+				<button class="mx-2 mt-2 px-2 bg-blue-600 border-solid border-2 border-blue-600 rounded-md"> Sortie de production collective </button>
+			</div>
+		</div>
+		
+		<div class="body-card mx-8 px-8 border-solid border-2 border-gray-600 shadow-lg rounded-md h-56">
+			<div class="body-card-info ">
+				<h2 class="text-lg">Assitance Technique</h2>
+				<h2>Nombre de conseiller en production : 50 </h2>
+				<h2>Nombre de conseiller en sortie de production : 10 <h2>
+				<h3>Taux de sortie de production : 20% </h3>
+				<button class="mx-2 mt-2 px-2 bg-green-600 border-solid border-2 border-green-600 rounded-md"> Sortie de production individuelle</button></br>
+				<button class="mx-2 mt-2 px-2 bg-blue-600 border-solid border-2 border-blue-600 rounded-md"> Sortie de production collective </button>
+			</div>
+		</div>
+		
+		<div class="body-card mx-8 px-8 border-solid border-2 border-gray-600 shadow-lg rounded-md h-56">
+			<div class="body-card-info ">
+				<h2 class="text-lg">Assitance Technique</h2>
+				<h2>Nombre de conseiller en production : 50 </h2>
+				<h2>Nombre de conseiller en sortie de production : 10 <h2>
+				<h3>Taux de sortie de production : 20% </h3>
+				<button class="mx-2 mt-2 px-2 bg-green-600 border-solid border-2 border-green-600 rounded-md"> Sortie de production individuelle</button></br>
+				<button class="mx-2 mt-2 px-2 bg-blue-600 border-solid border-2 border-blue-600 rounded-md"> Sortie de production collective </button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="flex flex-wrap modal" id="myModal">
+		<div class="modal-content">
+			<button class="myBtn-close close">Fermer</button>
+			<form action="action.php" class="" id="modal-form">
+				<label for="conseiller"> Quel conseiller souhaitez vous sortir ? </label>
+					<select id="conseiller">
+						<option value="conseiller 1"> conseiller 1 </option>
+					</select>
+				<label for="temps"> Combien de temps souhaitez vous sortir ce conseiller? </label>
+					<input type="time">
+				<input type="submit" value="Confirmer la sortie de production">
+			</form>
+		</div>
+	</div>
+	
+		<div class="flex flex-wrap modal2" id="myModal2">
+			<div class=" modal-content ">
+				<button class="myBtn2 close2">Fermer</button>
+				<form action="action.php" class="flex flex-col" id="modal-form">
+					<label for="conseiller"> Quels conseillers souhaitez vous sortir ? 
+						<select id="conseiller" multiple>
+							<option value="conseiller 1"> conseiller 1 </option>
+							<option value="conseiller 2"> conseiller 2 </option>
+							<option value="conseiller 3"> conseiller 3 </option>
+							<option value="conseiller 4"> conseiller 4 </option>
+							<option value="conseiller 5"> conseiller 5 </option>
+						</select>
+					</label>
+						
+					<label for="temps"> Par conseiller, combien de temps souhaitez vous le sortir?
+						<input type="time">						
+					</label>
+					
+					<input type="submit" value="Confirmer la sortie de production">
+				</form>
+			</div>
+		</div>
+		
+<script src="script.js"></script>
+</body>
+
+</html> 
